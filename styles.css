@@ -1,0 +1,185 @@
+:root{
+    --color-cyan:hsl(179,62%,43%);
+    --color-BYellow:hsl(71,73%,54%);
+    --color-LGray:hsl(204, 43%, 93%);
+    --color-GBlue:hsl(218, 22%, 67%);
+} 
+
+*{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    width: 375px;
+    height: 100%;
+    background-color: var(--color-GBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 303px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-LGray);
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+main{
+    text-align: start;
+    margin:0 auto;
+    height: 270px;
+    background-color: var(--color-LGray);
+}
+#txth1{
+    font-size: 22px;
+    color: var(--color-cyan);
+    margin-left: 25px;
+    margin-top:30px;
+}
+main h2{
+    margin-left: 25px;
+    margin-top: 30px;
+    color:var(--color-BYellow)
+}
+main p{
+    width: 270px;
+    font-size: 14px;
+    color: var(--color-GBlue);
+    line-height: 25px;
+    margin-left: 25px;
+}
+#Subscription{
+    background-color: var(--color-cyan);
+    height: 230px;
+    width: 100%;
+    color:var(--color-LGray)
+}
+#Subscription h2{
+    font-size: 20px;
+    margin-left:25px;
+    margin-top: 25px;
+}
+.precio{
+    color:var(--color-GBlue);
+    margin-left: 25px;
+}
+span{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--color-LGray);
+    margin-right: 10px;
+}
+.desc{
+    font-size: 16px;
+    margin-left: 25px;
+    margin-bottom: 40px;
+}
+#btn{
+    margin-top: 100px;
+    margin-left: 25px;
+    padding: 15px 95px;
+    background-color: var(--color-BYellow);
+    border-radius: 10px;
+    text-decoration: none;
+    color:var(--color-LGray);
+    font-weight: 700;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
+}
+#whyus{
+    width: 100%;
+    height: 230px;
+    background-color:rgba(42, 178, 176, 0.671);
+    color: var(--color-LGray);
+}
+#whyus h2{
+    font-size: 20px;
+    margin-left: 25px;
+}
+.txt-whyus{
+font-size: 16px;
+margin-left: 25px;
+width: 190px;
+}
+@media all and ( min-width:599px){
+body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 634px;
+    height: 480px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 10px;
+    background-color: transparent;
+}
+main{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 215px;
+    margin-bottom: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-end: 2;
+}
+#txth1{
+    margin-left: 50px;
+}
+main h2{
+    margin-left: 50px;
+}
+main p{
+    font-size: 16px;
+    width: 90%;
+    margin-left: 50px;
+}
+#Subscription{
+    height: 262px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 0px 0px 0px 10px;
+}
+#Subscription h2{
+    margin-left:40px;
+    margin-top: 40px;
+}
+.precio{
+margin-left: 40px;
+}
+
+
+.desc{
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+#btn{
+    margin-top: 120px; 
+    margin-left:50px; 
+}
+#whyus{
+    height: 262px;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 0px 0px 10px 0px;
+    
+}
+#whyus h2{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.txt-whyus{
+
+margin-left: 50px;
+width: 180px;
+}
+
+}
